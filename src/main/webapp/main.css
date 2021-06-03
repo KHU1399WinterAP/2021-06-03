@@ -1,0 +1,87 @@
+:root {
+    --color-primary: cornflowerblue;
+    --color-light: #fafafa;
+    --color-dark: #1a1a1a;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+}
+
+*,
+*:hover,
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--color-dark);
+    color: var(--color-light);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+
+    min-height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    min-width: 60rem;
+}
+
+form .row {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+form label::after {
+    content: ':';
+}
+
+form input {
+    padding: 0.5rem 1rem;
+
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+form button {
+    background: var(--color-primary);
+    color: inherit;
+
+    min-width: 16rem;
+
+    padding: 1rem 1rem;
+
+    border: none;
+    border-radius: 999rem;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
